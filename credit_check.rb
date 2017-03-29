@@ -20,8 +20,8 @@ if total.odd?
 end
 
 new_collection = (0..total).to_a.map do |index|
-    if doubled_elements[index].to_s.length > 1
-        new_number = doubled_elements[index].to_s[0].to_i + doubled_elements[index].to_s[1].to_i
+    if doubled_elements[index] > 9
+        new_number = doubled_elements[index] - 9
     else doubled_elements[index]
     end
 end
